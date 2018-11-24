@@ -1,0 +1,19 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align:center">
+      Contactos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let i of contactos">
+    <ion-item>
+      <h2>{{i.nombre}}</h2>
+      <p>{{i.telefono}}</p>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
