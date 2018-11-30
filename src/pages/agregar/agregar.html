@@ -6,15 +6,17 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-buttons left><button (click)="clickHome()"> Regresar </button></ion-buttons>
+  <ion-navbar color="danger">
+    <ion-buttons left><button (click)="clickHome()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button></ion-buttons>
     <ion-title style="text-align:center">Agregar</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="background-color: #FF6542">
   <ion-list>
     <ion-item>
       <ion-label fixed>Nombre</ion-label>
@@ -45,5 +47,5 @@
   </ion-list>
   <button [disabled]="this.nombre.length == 0 || this.telefono.length == 0 ||
   this.correo.length == 0 || this.facebook.length == 0 || this.twitter.length == 0 ||
-  this.instagram.length == 0" (click)="clickAdd()" ion-button>Agregar</button>
+  this.instagram.length == 0" (click)="clickAdd()" block color="secondary" ion-button>Agregar</button>
 </ion-content>

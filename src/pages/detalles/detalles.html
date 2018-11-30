@@ -6,22 +6,39 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>{{nombre}}</ion-title>
+  <ion-navbar color="danger">
+    <ion-title style="text-align:center">{{nombre}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="background-color: #FF6542" text-center>
+  <img src="../assets/imgs/icono.png">
   <ion-list>
+    <ion-item>
+      <ion-icon name="person"></ion-icon>
+      Nombre: {{nombre}}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="call"></ion-icon>
+      Telefono: {{telefono}}
+    </ion-item>
     <ion-item >
-      <p>NOMBRE: {{nombre}}</p>
-      <p>TELEFONO: {{telefono}}</p>
-      <p>CORREO: {{correo}}</p>
-      <p>FACEBOOK: {{facebook}}</p>
-      <p>TWITTER: {{twitter}}</p>
-      <p>INSTAGRAM: {{instagram}}</p>
+      <ion-icon name="mail"></ion-icon>
+      Correo: {{correo}}
+    </ion-item>
+    <ion-item >
+      <ion-icon name="logo-facebook"></ion-icon>
+      Facebook: {{facebook}}
+    </ion-item>
+    <ion-item >
+      <ion-icon name="logo-twitter"></ion-icon>
+      Twitter: {{twitter}}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-instagram"></ion-icon>
+      Instagram: {{instagram}}
       <!-- *ngFor=let d of detalles
             d.nombre ...-->
     </ion-item>
