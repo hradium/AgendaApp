@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
 import {Http} from "@angular/http";
 import {DetallesPage} from "../detalles/detalles";
+import {AgregarPage} from "../agregar/agregar";
 
 @Component({
   selector: 'page-home',
@@ -9,6 +10,7 @@ import {DetallesPage} from "../detalles/detalles";
 })
 export class HomePage {
   detallesPage=DetallesPage;
+  agregarPage=AgregarPage;
   contactos=[];
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
@@ -18,6 +20,9 @@ export class HomePage {
   clickDetalles(i){
     console.log(i.id);
     this.navCtrl.push(this.detallesPage, i);
+  }
+  clickAgregar(){
+    this.navCtrl.setRoot(AgregarPage);
   }
 
   getContactos() {

@@ -10,6 +10,10 @@
     {
       "path": "/detalles/",
       "proxyUrl": "http://127.0.0.1:5000/detalles/"
+    },
+    {
+      "path": "/agregar/",
+      "proxyUrl": "http://127.0.0.1:5000/agregar/"
     }
   ]
 }

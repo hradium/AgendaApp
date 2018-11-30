@@ -8,12 +8,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {HttpModule} from "@angular/http";
 import {DetallesPage} from "../pages/detalles/detalles";
+import {AgregarPage} from "../pages/agregar/agregar";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    DetallesPage
+    DetallesPage,
+    AgregarPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import {DetallesPage} from "../pages/detalles/detalles";
   entryComponents: [
     MyApp,
     HomePage,
-    DetallesPage
+    DetallesPage,
+    AgregarPage
   ],
   providers: [
     StatusBar,
